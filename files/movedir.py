@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# 用途: 文件夹剪切工具，超长文件名自动缩短后移动（跨盘安全）
+# 用法: python movedir.py SRC DST [--max-bytes 255] [--dry-run] [--overwrite] [--log FILE]
+# 注意: 跨盘非原子；失败不删源；默认不覆盖已存在文件；eCryptfs 用 --max-bytes 143
 """
 movedir.py - 文件夹到文件夹"剪切"，遇到超长文件名自动缩短而不是跳过。
 

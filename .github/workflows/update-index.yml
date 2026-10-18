@@ -1,7 +1,16 @@
 name: Update INDEX.md
 
 on:
-  workflow_dispatch:   # 仅手动触发
+  push:
+    branches: [main]
+    paths:
+      - '**/*.bat'
+      - '**/*.cmd'
+      - '**/*.ps1'
+      - '**/*.py'
+      - '**/*.sh'
+      - 'make-index.py'
+  workflow_dispatch:   # 保留手动触发
 
 jobs:
   index:

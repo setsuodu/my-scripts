@@ -7,8 +7,9 @@
 ```
 my-scripts/
 ├── artcraft/       # 便携版创意软件格式注册（Photo/Word/Grid/Effect/FilmCraft）
-├── files/          # 文件整理、去重、批量操作
 ├── chrome/         # Chrome 相关（指定 Profile 启动等）
+├── comfyui/        # ComfyUI 启动与 API 相关
+├── files/          # 文件整理、去重、批量操作、跨盘移动
 ├── windows/        # Windows 系统维护
 ├── make-index.py   # 扫描「用途:」行，自动生成 INDEX.md
 ├── INDEX.md        # 自动生成的脚本索引
@@ -21,7 +22,9 @@ my-scripts/
 
 ## 文件头约定
 
-每个脚本开头固定三行（可再加「依赖」等）：
+每个脚本开头固定三行（可再加「依赖」等）。`make-index.py` 只认「用途:」这一行，注释符号按语言自选：
+
+**批处理 (.bat / .cmd)**
 
 ```
 REM 用途: ……
@@ -29,7 +32,29 @@ REM 用法: ……
 REM 注意: ……
 ```
 
-跑一次 `python make-index.py` 即可更新索引表。
+**Python (.py)**
+
+```python
+# 用途: ……
+# 用法: ……
+# 注意: ……
+```
+
+**PowerShell (.ps1) / Shell (.sh)**
+
+```
+# 用途: ……
+# 用法: ……
+# 注意: ……
+```
+
+本地更新索引：
+
+```bash
+python make-index.py
+```
+
+推送到 `main` 后 CI 会自动重新生成并提交 `INDEX.md`（也可在 Actions 页手动触发）。
 
 ## artcraft 使用说明
 
@@ -50,5 +75,5 @@ REM 注意: ……
 ## 使用建议
 
 - 把本仓库目录加入 PATH，任意位置可直接敲脚本名。
-- 搜索时用 Everything / PowerToys Run，搜中文关键词（如「去重」「签到」「注册」）即可命中文件头说明。
+- 搜索时用 Everything / PowerToys Run，搜中文关键词（如「去重」「签到」「注册」「移动」）即可命中文件头说明。
 - 会改动数据的脚本务必在「注意」里写清楚副作用。
