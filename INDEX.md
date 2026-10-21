@@ -10,3 +10,4 @@
 | `files/dedupe-numbered-downloads.bat` | 清理「名字 (1).ext」这类重复下载文件，保留体积最大的，其余移入 _delete |
 | `files/movedir.py` | 文件夹剪切工具，超长文件名自动缩短后移动（跨盘安全） |
 | `windows/clear-run-history.bat` | 清除「运行」对话框（Win+R）的历史记录 |
+| `x-likes/x_ingest.py` | （缺说明） |
