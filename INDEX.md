@@ -1,6 +1,6 @@
 | 脚本 | 用途 |
 |---|---|
-| `artcraft/craft_updater.py` | （缺说明） |
+| `artcraft/craft_updater.py` | 自动检测并更新 D:\Program Files\ArtCraft 下各便携版 Craft 应用 |
 | `artcraft/reg_effectcraft.bat` | 便携版 EffectCraft 注册 After Effects 工程格式到「打开方式」 |
 | `artcraft/reg_filmcraft.bat` | 便携版 FilmCraft 注册 Premiere 工程格式到「打开方式」 |
 | `artcraft/reg_gridcraft.bat` | 便携版 GridCraft 注册表格格式到「打开方式」 |
@@ -13,4 +13,4 @@
 | `windows/clean_lockscreen.ps1` | 清理锁屏背景缓存（LockScreen_*）并清除壁纸历史记录 |
 | `windows/clean_wallpaper.ps1` | 重置桌面壁纸为系统默认，并清除最近壁纸历史与转码缓存 |
 | `windows/clear-run-history.bat` | 清除「运行」对话框（Win+R）的历史记录 |
-| `x-likes/x_ingest.py` | （缺说明） |
+| `x-likes/x_ingest.py` | 把油猴脚本导出的 x_*.json 入库到 Obsidian（下载媒体 + 生成 md + 归档 json） |
