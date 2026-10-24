@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# 用途: 自动检测并更新 D:\Program Files\ArtCraft 下各便携版 Craft 应用
+# 用法: python craft_updater.py（需同目录有 config.json）
+# 注意: 依赖 requests；检测到新版本会下载解压覆盖并更新 version.json；常驻轮询
 """
 自动维护 D:\Program Files\ArtCraft 下的各个 Craft 应用（portable 版）
 检测到新版本 → 下载 → 解压覆盖 → 更新 version.json

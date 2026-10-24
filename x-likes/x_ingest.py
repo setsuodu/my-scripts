@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# 用途: 把油猴脚本导出的 x_*.json 入库到 Obsidian（下载媒体 + 生成 md + 归档 json）
+# 用法: python x_ingest.py [--once] [--rebuild] [--force] [--vault PATH] [--inbox PATH]
+# 注意: 仅标准库，Python 3.8+；默认监视 Downloads 中的 x_*.json；--force 会覆盖已有 md
 """
 x_ingest.py —— 把油猴脚本导出的 x_*.json 入库到 Obsidian 目录。
 
