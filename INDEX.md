@@ -10,7 +10,7 @@
 | `comfyui/run_nvidia_gpu_api.bat` | 启动 ComfyUI（NVIDIA GPU）并开启 API，允许远程/局域网调用 |
 | `files/dedupe-numbered-downloads.bat` | 清理「名字 (1).ext」这类重复下载文件，保留体积最大的，其余移入 _delete |
 | `files/movedir.py` | 文件夹剪切工具，超长文件名自动缩短后移动（跨盘安全） |
-| `windows/clean_lockscreen.ps1` | （缺说明） |
-| `windows/clean_wallpaper.ps1` | （缺说明） |
+| `windows/clean_lockscreen.ps1` | 清理锁屏背景缓存（LockScreen_*）并清除壁纸历史记录 |
+| `windows/clean_wallpaper.ps1` | 重置桌面壁纸为系统默认，并清除最近壁纸历史与转码缓存 |
 | `windows/clear-run-history.bat` | 清除「运行」对话框（Win+R）的历史记录 |
 | `x-likes/x_ingest.py` | （缺说明） |
